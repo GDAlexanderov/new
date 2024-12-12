@@ -8,7 +8,7 @@ public class Alphabet {
     public void setLetter(char letter, int value) {
         int index = letter - 'a'; // Вычисляем индекс в массиве
         sum -= letters[index]; // Вычитаем старое значение из суммы
-        letters[index] = value; // Устанавливаем новое значение
+        letters[index] = value+1; // Устанавливаем новое значение
         sum += value; // Добавляем новое значение к сумме
     }
 
